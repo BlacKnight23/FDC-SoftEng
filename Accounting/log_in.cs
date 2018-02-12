@@ -17,7 +17,7 @@ namespace Accounting
         public log_in()
         {
             InitializeComponent();
-            conn = new MySqlConnection("Server=localhost;Database=fdc;Uid=root; ");
+            conn = new MySqlConnection("Server=localhost;Database=fdc;Uid=root;pwd=root ");
         }
 
         private void log_in_Load(object sender, EventArgs e)
