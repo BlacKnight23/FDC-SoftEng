@@ -61,12 +61,12 @@ namespace Accounting
 
         private void Add_Click(object sender, EventArgs e)
         {
-            panel1.Show();
+            ptn_pnl.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            panel1.Hide();
+            ptn_pnl.Hide();
         }
     }
 }

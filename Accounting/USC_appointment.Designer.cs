@@ -39,8 +39,7 @@
             this.CancelS = new System.Windows.Forms.Button();
             this.EditS = new System.Windows.Forms.Button();
             this.AddS = new System.Windows.Forms.Button();
-            this.Add = new System.Windows.Forms.Button();
-            this.trm = new System.Windows.Forms.ComboBox();
+            this.add_ptn = new System.Windows.Forms.Button();
             this.es = new System.Windows.Forms.ComboBox();
             this.em = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -58,7 +57,7 @@
             this.patient = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.datetime = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.ptn_pnl = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -76,9 +75,52 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.adschp = new System.Windows.Forms.Panel();
+            this.rsts = new System.Windows.Forms.Button();
+            this.addsch = new System.Windows.Forms.Button();
+            this.trt_btn = new System.Windows.Forms.Button();
+            this.dctr_nm = new System.Windows.Forms.TextBox();
+            this.dctr = new System.Windows.Forms.Label();
+            this.add_dctr = new System.Windows.Forms.Button();
+            this.doctor = new System.Windows.Forms.Label();
+            this.dct_sve = new System.Windows.Forms.Button();
+            this.dct_rst = new System.Windows.Forms.Button();
+            this.dct_ccl = new System.Windows.Forms.Button();
+            this.dctr_pnl = new System.Windows.Forms.Panel();
+            this.dct_cn = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.dct_gnd = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.dct_age = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.dct_bdy = new System.Windows.Forms.DateTimePicker();
+            this.label17 = new System.Windows.Forms.Label();
+            this.dct_add = new System.Windows.Forms.TextBox();
+            this.dct_lst = new System.Windows.Forms.TextBox();
+            this.dct_frst = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.trmnt_pnl = new System.Windows.Forms.Panel();
+            this.trt_cncl = new System.Windows.Forms.Button();
+            this.trt_sve = new System.Windows.Forms.Button();
+            this.trtmnts = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.add_grp = new System.Windows.Forms.Panel();
+            this.trt_txt = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.trt_add = new System.Windows.Forms.Button();
+            this.trmnt_cmb = new System.Windows.Forms.ComboBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.ViewBox1)).BeginInit();
             this.details.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.ptn_pnl.SuspendLayout();
+            this.adschp.SuspendLayout();
+            this.dctr_pnl.SuspendLayout();
+            this.trmnt_pnl.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.add_grp.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -134,17 +176,21 @@
             this.ViewBox1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ViewBox1.Location = new System.Drawing.Point(385, 176);
             this.ViewBox1.Name = "ViewBox1";
-            this.ViewBox1.Size = new System.Drawing.Size(477, 322);
+            this.ViewBox1.Size = new System.Drawing.Size(477, 350);
             this.ViewBox1.TabIndex = 52;
             // 
             // details
             // 
+            this.details.Controls.Add(this.adschp);
+            this.details.Controls.Add(this.add_dctr);
+            this.details.Controls.Add(this.dctr_nm);
+            this.details.Controls.Add(this.dctr);
+            this.details.Controls.Add(this.trt_btn);
             this.details.Controls.Add(this.rst);
             this.details.Controls.Add(this.CancelS);
             this.details.Controls.Add(this.EditS);
             this.details.Controls.Add(this.AddS);
-            this.details.Controls.Add(this.Add);
-            this.details.Controls.Add(this.trm);
+            this.details.Controls.Add(this.add_ptn);
             this.details.Controls.Add(this.es);
             this.details.Controls.Add(this.em);
             this.details.Controls.Add(this.label7);
@@ -162,7 +208,7 @@
             this.details.Controls.Add(this.patient);
             this.details.Location = new System.Drawing.Point(16, 176);
             this.details.Name = "details";
-            this.details.Size = new System.Drawing.Size(354, 322);
+            this.details.Size = new System.Drawing.Size(354, 350);
             this.details.TabIndex = 53;
             this.details.TabStop = false;
             this.details.Text = "Appointent Details";
@@ -173,7 +219,7 @@
             this.rst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.rst.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.rst.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rst.Location = new System.Drawing.Point(183, 255);
+            this.rst.Location = new System.Drawing.Point(183, 300);
             this.rst.Name = "rst";
             this.rst.Size = new System.Drawing.Size(142, 20);
             this.rst.TabIndex = 57;
@@ -185,7 +231,7 @@
             this.CancelS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.CancelS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CancelS.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CancelS.Location = new System.Drawing.Point(183, 229);
+            this.CancelS.Location = new System.Drawing.Point(183, 274);
             this.CancelS.Name = "CancelS";
             this.CancelS.Size = new System.Drawing.Size(142, 20);
             this.CancelS.TabIndex = 56;
@@ -197,7 +243,7 @@
             this.EditS.BackColor = System.Drawing.Color.Cyan;
             this.EditS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.EditS.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditS.Location = new System.Drawing.Point(30, 255);
+            this.EditS.Location = new System.Drawing.Point(30, 300);
             this.EditS.Name = "EditS";
             this.EditS.Size = new System.Drawing.Size(142, 20);
             this.EditS.TabIndex = 18;
@@ -210,31 +256,23 @@
             this.AddS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.AddS.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddS.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.AddS.Location = new System.Drawing.Point(30, 229);
+            this.AddS.Location = new System.Drawing.Point(30, 274);
             this.AddS.Name = "AddS";
             this.AddS.Size = new System.Drawing.Size(142, 20);
             this.AddS.TabIndex = 17;
             this.AddS.Text = "Add Schedule";
             this.AddS.UseVisualStyleBackColor = false;
             // 
-            // Add
+            // add_ptn
             // 
-            this.Add.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Add.Location = new System.Drawing.Point(302, 46);
-            this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(41, 20);
-            this.Add.TabIndex = 16;
-            this.Add.Text = "...";
-            this.Add.UseVisualStyleBackColor = true;
-            this.Add.Click += new System.EventHandler(this.Add_Click);
-            // 
-            // trm
-            // 
-            this.trm.FormattingEnabled = true;
-            this.trm.Location = new System.Drawing.Point(154, 174);
-            this.trm.Name = "trm";
-            this.trm.Size = new System.Drawing.Size(142, 21);
-            this.trm.TabIndex = 15;
+            this.add_ptn.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_ptn.Location = new System.Drawing.Point(302, 46);
+            this.add_ptn.Name = "add_ptn";
+            this.add_ptn.Size = new System.Drawing.Size(41, 20);
+            this.add_ptn.TabIndex = 16;
+            this.add_ptn.Text = "...";
+            this.add_ptn.UseVisualStyleBackColor = true;
+            this.add_ptn.Click += new System.EventHandler(this.Add_Click);
             // 
             // es
             // 
@@ -388,37 +426,38 @@
             this.datetime.Size = new System.Drawing.Size(0, 11);
             this.datetime.TabIndex = 55;
             // 
-            // panel1
+            // ptn_pnl
             // 
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.textBox6);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.dateTimePicker1);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(385, 176);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(477, 322);
-            this.panel1.TabIndex = 56;
-            this.panel1.Visible = false;
+            this.ptn_pnl.Controls.Add(this.dctr_pnl);
+            this.ptn_pnl.Controls.Add(this.button3);
+            this.ptn_pnl.Controls.Add(this.button2);
+            this.ptn_pnl.Controls.Add(this.button1);
+            this.ptn_pnl.Controls.Add(this.textBox6);
+            this.ptn_pnl.Controls.Add(this.label12);
+            this.ptn_pnl.Controls.Add(this.textBox5);
+            this.ptn_pnl.Controls.Add(this.label11);
+            this.ptn_pnl.Controls.Add(this.textBox4);
+            this.ptn_pnl.Controls.Add(this.label10);
+            this.ptn_pnl.Controls.Add(this.label9);
+            this.ptn_pnl.Controls.Add(this.dateTimePicker1);
+            this.ptn_pnl.Controls.Add(this.label4);
+            this.ptn_pnl.Controls.Add(this.textBox3);
+            this.ptn_pnl.Controls.Add(this.textBox2);
+            this.ptn_pnl.Controls.Add(this.textBox1);
+            this.ptn_pnl.Controls.Add(this.label3);
+            this.ptn_pnl.Controls.Add(this.label2);
+            this.ptn_pnl.Location = new System.Drawing.Point(385, 176);
+            this.ptn_pnl.Name = "ptn_pnl";
+            this.ptn_pnl.Size = new System.Drawing.Size(477, 350);
+            this.ptn_pnl.TabIndex = 56;
+            this.ptn_pnl.Visible = false;
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.SystemColors.Control;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(336, 267);
+            this.button3.Location = new System.Drawing.Point(336, 295);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(87, 20);
             this.button3.TabIndex = 58;
@@ -431,7 +470,7 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(212, 267);
+            this.button2.Location = new System.Drawing.Point(212, 295);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(87, 20);
             this.button2.TabIndex = 58;
@@ -444,7 +483,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(82, 267);
+            this.button1.Location = new System.Drawing.Point(82, 295);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(87, 20);
             this.button1.TabIndex = 58;
@@ -453,7 +492,7 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(221, 210);
+            this.textBox6.Location = new System.Drawing.Point(221, 238);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(202, 20);
             this.textBox6.TabIndex = 14;
@@ -462,7 +501,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(61, 214);
+            this.label12.Location = new System.Drawing.Point(61, 242);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(168, 16);
             this.label12.TabIndex = 13;
@@ -470,7 +509,7 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(300, 174);
+            this.textBox5.Location = new System.Drawing.Point(300, 202);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(123, 20);
             this.textBox5.TabIndex = 12;
@@ -479,7 +518,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(218, 178);
+            this.label11.Location = new System.Drawing.Point(218, 206);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(78, 16);
             this.label11.TabIndex = 11;
@@ -487,7 +526,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(118, 174);
+            this.textBox4.Location = new System.Drawing.Point(118, 202);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(94, 20);
             this.textBox4.TabIndex = 10;
@@ -496,7 +535,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(61, 178);
+            this.label10.Location = new System.Drawing.Point(61, 206);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(48, 16);
             this.label10.TabIndex = 9;
@@ -506,7 +545,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(61, 139);
+            this.label9.Location = new System.Drawing.Point(61, 167);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(88, 16);
             this.label9.TabIndex = 8;
@@ -514,7 +553,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(175, 98);
+            this.dateTimePicker1.Location = new System.Drawing.Point(175, 126);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(248, 20);
             this.dateTimePicker1.TabIndex = 7;
@@ -524,7 +563,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(61, 102);
+            this.label4.Location = new System.Drawing.Point(61, 130);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(108, 16);
             this.label4.TabIndex = 5;
@@ -532,21 +571,21 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(175, 135);
+            this.textBox3.Location = new System.Drawing.Point(175, 163);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(248, 20);
             this.textBox3.TabIndex = 4;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(302, 58);
+            this.textBox2.Location = new System.Drawing.Point(302, 86);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(121, 20);
             this.textBox2.TabIndex = 3;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(175, 58);
+            this.textBox1.Location = new System.Drawing.Point(175, 86);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(121, 20);
             this.textBox1.TabIndex = 2;
@@ -555,7 +594,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(61, 62);
+            this.label3.Location = new System.Drawing.Point(61, 90);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 16);
             this.label3.TabIndex = 1;
@@ -565,18 +604,417 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(191, 18);
+            this.label2.Location = new System.Drawing.Point(191, 35);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 16);
             this.label2.TabIndex = 0;
             this.label2.Text = "Add Patient";
+            // 
+            // adschp
+            // 
+            this.adschp.Controls.Add(this.rsts);
+            this.adschp.Controls.Add(this.addsch);
+            this.adschp.Location = new System.Drawing.Point(0, 250);
+            this.adschp.Name = "adschp";
+            this.adschp.Size = new System.Drawing.Size(354, 100);
+            this.adschp.TabIndex = 58;
+            this.adschp.Visible = false;
+            // 
+            // rsts
+            // 
+            this.rsts.BackColor = System.Drawing.Color.LemonChiffon;
+            this.rsts.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.rsts.Font = new System.Drawing.Font("Lucida Console", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rsts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rsts.Location = new System.Drawing.Point(203, 33);
+            this.rsts.Name = "rsts";
+            this.rsts.Size = new System.Drawing.Size(112, 33);
+            this.rsts.TabIndex = 27;
+            this.rsts.Text = "Reset";
+            this.rsts.UseVisualStyleBackColor = false;
+            // 
+            // addsch
+            // 
+            this.addsch.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.addsch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.addsch.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addsch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addsch.Location = new System.Drawing.Point(18, 33);
+            this.addsch.Name = "addsch";
+            this.addsch.Size = new System.Drawing.Size(122, 33);
+            this.addsch.TabIndex = 26;
+            this.addsch.Text = "Add Schedule";
+            this.addsch.UseVisualStyleBackColor = false;
+            // 
+            // trt_btn
+            // 
+            this.trt_btn.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.trt_btn.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.trt_btn.Location = new System.Drawing.Point(154, 174);
+            this.trt_btn.Name = "trt_btn";
+            this.trt_btn.Size = new System.Drawing.Size(142, 23);
+            this.trt_btn.TabIndex = 58;
+            this.trt_btn.Text = "Select Treatment";
+            this.trt_btn.UseVisualStyleBackColor = true;
+            // 
+            // dctr_nm
+            // 
+            this.dctr_nm.Location = new System.Drawing.Point(154, 215);
+            this.dctr_nm.Name = "dctr_nm";
+            this.dctr_nm.Size = new System.Drawing.Size(142, 20);
+            this.dctr_nm.TabIndex = 60;
+            // 
+            // dctr
+            // 
+            this.dctr.AutoSize = true;
+            this.dctr.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dctr.Location = new System.Drawing.Point(25, 220);
+            this.dctr.Name = "dctr";
+            this.dctr.Size = new System.Drawing.Size(54, 11);
+            this.dctr.TabIndex = 59;
+            this.dctr.Text = "Doctor:";
+            // 
+            // add_dctr
+            // 
+            this.add_dctr.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_dctr.Location = new System.Drawing.Point(302, 215);
+            this.add_dctr.Name = "add_dctr";
+            this.add_dctr.Size = new System.Drawing.Size(41, 20);
+            this.add_dctr.TabIndex = 61;
+            this.add_dctr.Text = "...";
+            this.add_dctr.UseVisualStyleBackColor = true;
+            // 
+            // doctor
+            // 
+            this.doctor.AutoSize = true;
+            this.doctor.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.doctor.Location = new System.Drawing.Point(191, 33);
+            this.doctor.Name = "doctor";
+            this.doctor.Size = new System.Drawing.Size(108, 16);
+            this.doctor.TabIndex = 1;
+            this.doctor.Text = "Add Doctor";
+            // 
+            // dct_sve
+            // 
+            this.dct_sve.BackColor = System.Drawing.Color.SpringGreen;
+            this.dct_sve.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.dct_sve.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dct_sve.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.dct_sve.Location = new System.Drawing.Point(78, 287);
+            this.dct_sve.Name = "dct_sve";
+            this.dct_sve.Size = new System.Drawing.Size(87, 20);
+            this.dct_sve.TabIndex = 74;
+            this.dct_sve.Text = "Save";
+            this.dct_sve.UseVisualStyleBackColor = false;
+            // 
+            // dct_rst
+            // 
+            this.dct_rst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.dct_rst.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.dct_rst.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dct_rst.Location = new System.Drawing.Point(208, 287);
+            this.dct_rst.Name = "dct_rst";
+            this.dct_rst.Size = new System.Drawing.Size(87, 20);
+            this.dct_rst.TabIndex = 73;
+            this.dct_rst.Text = "Reset";
+            this.dct_rst.UseVisualStyleBackColor = false;
+            // 
+            // dct_ccl
+            // 
+            this.dct_ccl.BackColor = System.Drawing.SystemColors.Control;
+            this.dct_ccl.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.dct_ccl.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dct_ccl.Location = new System.Drawing.Point(332, 287);
+            this.dct_ccl.Name = "dct_ccl";
+            this.dct_ccl.Size = new System.Drawing.Size(87, 20);
+            this.dct_ccl.TabIndex = 72;
+            this.dct_ccl.Text = "Cancel";
+            this.dct_ccl.UseVisualStyleBackColor = false;
+            // 
+            // dctr_pnl
+            // 
+            this.dctr_pnl.Controls.Add(this.trmnt_pnl);
+            this.dctr_pnl.Controls.Add(this.dct_cn);
+            this.dctr_pnl.Controls.Add(this.label13);
+            this.dctr_pnl.Controls.Add(this.dct_gnd);
+            this.dctr_pnl.Controls.Add(this.label14);
+            this.dctr_pnl.Controls.Add(this.dct_age);
+            this.dctr_pnl.Controls.Add(this.label15);
+            this.dctr_pnl.Controls.Add(this.label16);
+            this.dctr_pnl.Controls.Add(this.dct_bdy);
+            this.dctr_pnl.Controls.Add(this.label17);
+            this.dctr_pnl.Controls.Add(this.dct_add);
+            this.dctr_pnl.Controls.Add(this.dct_lst);
+            this.dctr_pnl.Controls.Add(this.dct_frst);
+            this.dctr_pnl.Controls.Add(this.label18);
+            this.dctr_pnl.Controls.Add(this.dct_ccl);
+            this.dctr_pnl.Controls.Add(this.dct_rst);
+            this.dctr_pnl.Controls.Add(this.dct_sve);
+            this.dctr_pnl.Controls.Add(this.doctor);
+            this.dctr_pnl.Location = new System.Drawing.Point(0, 0);
+            this.dctr_pnl.Name = "dctr_pnl";
+            this.dctr_pnl.Size = new System.Drawing.Size(477, 350);
+            this.dctr_pnl.TabIndex = 59;
+            // 
+            // dct_cn
+            // 
+            this.dct_cn.Location = new System.Drawing.Point(217, 234);
+            this.dct_cn.Name = "dct_cn";
+            this.dct_cn.Size = new System.Drawing.Size(202, 20);
+            this.dct_cn.TabIndex = 87;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(57, 238);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(168, 16);
+            this.label13.TabIndex = 86;
+            this.label13.Text = "Contact Number: ";
+            // 
+            // dct_gnd
+            // 
+            this.dct_gnd.Location = new System.Drawing.Point(296, 198);
+            this.dct_gnd.Name = "dct_gnd";
+            this.dct_gnd.Size = new System.Drawing.Size(123, 20);
+            this.dct_gnd.TabIndex = 85;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(214, 202);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(78, 16);
+            this.label14.TabIndex = 84;
+            this.label14.Text = "Gender:";
+            // 
+            // dct_age
+            // 
+            this.dct_age.Location = new System.Drawing.Point(114, 198);
+            this.dct_age.Name = "dct_age";
+            this.dct_age.Size = new System.Drawing.Size(94, 20);
+            this.dct_age.TabIndex = 83;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(57, 202);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(48, 16);
+            this.label15.TabIndex = 82;
+            this.label15.Text = "Age:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(57, 163);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(88, 16);
+            this.label16.TabIndex = 81;
+            this.label16.Text = "Address:";
+            // 
+            // dct_bdy
+            // 
+            this.dct_bdy.Location = new System.Drawing.Point(171, 122);
+            this.dct_bdy.Name = "dct_bdy";
+            this.dct_bdy.Size = new System.Drawing.Size(248, 20);
+            this.dct_bdy.TabIndex = 80;
+            this.dct_bdy.Value = new System.DateTime(2018, 2, 10, 17, 31, 59, 0);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(57, 126);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(108, 16);
+            this.label17.TabIndex = 79;
+            this.label17.Text = "Birthdate:";
+            // 
+            // dct_add
+            // 
+            this.dct_add.Location = new System.Drawing.Point(171, 159);
+            this.dct_add.Name = "dct_add";
+            this.dct_add.Size = new System.Drawing.Size(248, 20);
+            this.dct_add.TabIndex = 78;
+            // 
+            // dct_lst
+            // 
+            this.dct_lst.Location = new System.Drawing.Point(298, 82);
+            this.dct_lst.Name = "dct_lst";
+            this.dct_lst.Size = new System.Drawing.Size(121, 20);
+            this.dct_lst.TabIndex = 77;
+            // 
+            // dct_frst
+            // 
+            this.dct_frst.Location = new System.Drawing.Point(171, 82);
+            this.dct_frst.Name = "dct_frst";
+            this.dct_frst.Size = new System.Drawing.Size(121, 20);
+            this.dct_frst.TabIndex = 76;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(57, 86);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(58, 16);
+            this.label18.TabIndex = 75;
+            this.label18.Text = "Name:";
+            // 
+            // trmnt_pnl
+            // 
+            this.trmnt_pnl.Controls.Add(this.textBox7);
+            this.trmnt_pnl.Controls.Add(this.groupBox2);
+            this.trmnt_pnl.Controls.Add(this.add_grp);
+            this.trmnt_pnl.Controls.Add(this.trt_add);
+            this.trmnt_pnl.Controls.Add(this.trmnt_cmb);
+            this.trmnt_pnl.Controls.Add(this.trt_cncl);
+            this.trmnt_pnl.Controls.Add(this.trt_sve);
+            this.trmnt_pnl.Controls.Add(this.trtmnts);
+            this.trmnt_pnl.Location = new System.Drawing.Point(0, 0);
+            this.trmnt_pnl.Name = "trmnt_pnl";
+            this.trmnt_pnl.Size = new System.Drawing.Size(477, 350);
+            this.trmnt_pnl.TabIndex = 57;
+            // 
+            // trt_cncl
+            // 
+            this.trt_cncl.BackColor = System.Drawing.SystemColors.Control;
+            this.trt_cncl.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.trt_cncl.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.trt_cncl.Location = new System.Drawing.Point(332, 292);
+            this.trt_cncl.Name = "trt_cncl";
+            this.trt_cncl.Size = new System.Drawing.Size(87, 20);
+            this.trt_cncl.TabIndex = 89;
+            this.trt_cncl.Text = "Cancel";
+            this.trt_cncl.UseVisualStyleBackColor = false;
+            // 
+            // trt_sve
+            // 
+            this.trt_sve.BackColor = System.Drawing.Color.SpringGreen;
+            this.trt_sve.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.trt_sve.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.trt_sve.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.trt_sve.Location = new System.Drawing.Point(78, 292);
+            this.trt_sve.Name = "trt_sve";
+            this.trt_sve.Size = new System.Drawing.Size(87, 20);
+            this.trt_sve.TabIndex = 91;
+            this.trt_sve.Text = "Save";
+            this.trt_sve.UseVisualStyleBackColor = false;
+            // 
+            // trtmnts
+            // 
+            this.trtmnts.AutoSize = true;
+            this.trtmnts.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.trtmnts.Location = new System.Drawing.Point(191, 38);
+            this.trtmnts.Name = "trtmnts";
+            this.trtmnts.Size = new System.Drawing.Size(108, 16);
+            this.trtmnts.TabIndex = 88;
+            this.trtmnts.Text = "Treatments";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.dataGridView3);
+            this.groupBox2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(255, 93);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(184, 165);
+            this.groupBox2.TabIndex = 95;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Selected Treatments";
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AllowUserToAddRows = false;
+            this.dataGridView3.AllowUserToDeleteRows = false;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(17, 21);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.ReadOnly = true;
+            this.dataGridView3.Size = new System.Drawing.Size(151, 137);
+            this.dataGridView3.TabIndex = 27;
+            // 
+            // add_grp
+            // 
+            this.add_grp.Controls.Add(this.trt_txt);
+            this.add_grp.Controls.Add(this.label19);
+            this.add_grp.Location = new System.Drawing.Point(38, 141);
+            this.add_grp.Name = "add_grp";
+            this.add_grp.Size = new System.Drawing.Size(186, 68);
+            this.add_grp.TabIndex = 94;
+            // 
+            // trt_txt
+            // 
+            this.trt_txt.Location = new System.Drawing.Point(6, 29);
+            this.trt_txt.Name = "trt_txt";
+            this.trt_txt.Size = new System.Drawing.Size(172, 20);
+            this.trt_txt.TabIndex = 1;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Calibri Light", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(3, 4);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(95, 18);
+            this.label19.TabIndex = 0;
+            this.label19.Text = "Please specify:";
+            // 
+            // trt_add
+            // 
+            this.trt_add.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.trt_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.trt_add.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.trt_add.Location = new System.Drawing.Point(184, 95);
+            this.trt_add.Name = "trt_add";
+            this.trt_add.Size = new System.Drawing.Size(40, 27);
+            this.trt_add.TabIndex = 93;
+            this.trt_add.Text = "Add";
+            this.trt_add.UseVisualStyleBackColor = false;
+            // 
+            // trmnt_cmb
+            // 
+            this.trmnt_cmb.FormattingEnabled = true;
+            this.trmnt_cmb.Items.AddRange(new object[] {
+            "Bonding",
+            "Braces",
+            "Bridges and Implants",
+            "Check-up",
+            "Cleaning",
+            "Crowns and Caps",
+            "Extraction",
+            "Dentures",
+            "Fillings and Repairs",
+            "Gum Surgery",
+            "Oral Cancer Examination",
+            "Root Canal",
+            "Sealants",
+            "Teeth Whitening",
+            "Others",
+            "X-Ray",
+            "Veneers"});
+            this.trmnt_cmb.Location = new System.Drawing.Point(38, 95);
+            this.trmnt_cmb.Name = "trmnt_cmb";
+            this.trmnt_cmb.Size = new System.Drawing.Size(140, 21);
+            this.trmnt_cmb.TabIndex = 92;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(17, 28);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.TabIndex = 96;
             // 
             // USC_appointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.ptn_pnl);
             this.Controls.Add(this.datetime);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.details);
@@ -592,8 +1030,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.ViewBox1)).EndInit();
             this.details.ResumeLayout(false);
             this.details.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.ptn_pnl.ResumeLayout(false);
+            this.ptn_pnl.PerformLayout();
+            this.adschp.ResumeLayout(false);
+            this.dctr_pnl.ResumeLayout(false);
+            this.dctr_pnl.PerformLayout();
+            this.trmnt_pnl.ResumeLayout(false);
+            this.trmnt_pnl.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.add_grp.ResumeLayout(false);
+            this.add_grp.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -608,8 +1055,7 @@
         private System.Windows.Forms.DataGridView ViewBox1;
         private System.Windows.Forms.GroupBox details;
         private System.Windows.Forms.Label patient;
-        private System.Windows.Forms.Button Add;
-        private System.Windows.Forms.ComboBox trm;
+        private System.Windows.Forms.Button add_ptn;
         private System.Windows.Forms.ComboBox es;
         private System.Windows.Forms.ComboBox em;
         private System.Windows.Forms.Label label7;
@@ -630,7 +1076,7 @@
         private System.Windows.Forms.Button CancelS;
         private System.Windows.Forms.Button EditS;
         private System.Windows.Forms.Button AddS;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel ptn_pnl;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox3;
@@ -648,5 +1094,42 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button trt_btn;
+        private System.Windows.Forms.Panel adschp;
+        private System.Windows.Forms.Button rsts;
+        private System.Windows.Forms.Button addsch;
+        private System.Windows.Forms.Button add_dctr;
+        private System.Windows.Forms.TextBox dctr_nm;
+        private System.Windows.Forms.Label dctr;
+        private System.Windows.Forms.Panel dctr_pnl;
+        private System.Windows.Forms.TextBox dct_cn;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox dct_gnd;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox dct_age;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.DateTimePicker dct_bdy;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox dct_add;
+        private System.Windows.Forms.TextBox dct_lst;
+        private System.Windows.Forms.TextBox dct_frst;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Button dct_ccl;
+        private System.Windows.Forms.Button dct_rst;
+        private System.Windows.Forms.Button dct_sve;
+        private System.Windows.Forms.Label doctor;
+        private System.Windows.Forms.Panel trmnt_pnl;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.Panel add_grp;
+        private System.Windows.Forms.TextBox trt_txt;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Button trt_add;
+        private System.Windows.Forms.ComboBox trmnt_cmb;
+        private System.Windows.Forms.Button trt_cncl;
+        private System.Windows.Forms.Button trt_sve;
+        private System.Windows.Forms.Label trtmnts;
     }
 }
