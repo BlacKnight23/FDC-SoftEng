@@ -59,14 +59,36 @@ namespace Accounting
 
         }
 
-        private void Add_Click(object sender, EventArgs e)
-        {
-            ptn_pnl.Show();
-        }
 
         private void button3_Click(object sender, EventArgs e)
         {
             ptn_pnl.Hide();
+        }
+
+
+        private void dct_ccl_Click(object sender, EventArgs e)
+        {
+            dctr_pnl.Hide();
+        }
+
+        private void trt_btn_Click(object sender, EventArgs e)
+        {
+            trmnt_pnl.Show();
+        }
+
+        private void trt_cncl_Click(object sender, EventArgs e)
+        {
+            trmnt_pnl.Hide();
+        }
+
+        private void add_ptn_Click(object sender, EventArgs e)
+        {
+            ptn_pnl.Show();
+        }
+
+        private void add_dtr_Click(object sender, EventArgs e)
+        {
+            dctr_pnl.Show();
         }
     }
 }

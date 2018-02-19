@@ -35,11 +35,18 @@
             this.Appointment = new System.Windows.Forms.Button();
             this.ViewBox1 = new System.Windows.Forms.DataGridView();
             this.details = new System.Windows.Forms.GroupBox();
+            this.add_dtr = new System.Windows.Forms.Button();
+            this.add_ptn = new System.Windows.Forms.Button();
+            this.adschp = new System.Windows.Forms.Panel();
+            this.rsts = new System.Windows.Forms.Button();
+            this.addsch = new System.Windows.Forms.Button();
+            this.dctr_nm = new System.Windows.Forms.TextBox();
+            this.dctr = new System.Windows.Forms.Label();
+            this.trt_btn = new System.Windows.Forms.Button();
             this.rst = new System.Windows.Forms.Button();
             this.CancelS = new System.Windows.Forms.Button();
             this.EditS = new System.Windows.Forms.Button();
             this.AddS = new System.Windows.Forms.Button();
-            this.add_ptn = new System.Windows.Forms.Button();
             this.es = new System.Windows.Forms.ComboBox();
             this.em = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -58,34 +65,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.datetime = new System.Windows.Forms.Label();
             this.ptn_pnl = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.adschp = new System.Windows.Forms.Panel();
-            this.rsts = new System.Windows.Forms.Button();
-            this.addsch = new System.Windows.Forms.Button();
-            this.trt_btn = new System.Windows.Forms.Button();
-            this.dctr_nm = new System.Windows.Forms.TextBox();
-            this.dctr = new System.Windows.Forms.Label();
-            this.add_dctr = new System.Windows.Forms.Button();
-            this.doctor = new System.Windows.Forms.Label();
-            this.dct_sve = new System.Windows.Forms.Button();
-            this.dct_rst = new System.Windows.Forms.Button();
-            this.dct_ccl = new System.Windows.Forms.Button();
             this.dctr_pnl = new System.Windows.Forms.Panel();
             this.dct_cn = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -100,10 +79,29 @@
             this.dct_lst = new System.Windows.Forms.TextBox();
             this.dct_frst = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
+            this.dct_ccl = new System.Windows.Forms.Button();
+            this.dct_rst = new System.Windows.Forms.Button();
+            this.dct_sve = new System.Windows.Forms.Button();
+            this.doctor = new System.Windows.Forms.Label();
+            this.ptn_ccl = new System.Windows.Forms.Button();
+            this.ptn_rst = new System.Windows.Forms.Button();
+            this.pnl_sv = new System.Windows.Forms.Button();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.trmnt_pnl = new System.Windows.Forms.Panel();
-            this.trt_cncl = new System.Windows.Forms.Button();
-            this.trt_sve = new System.Windows.Forms.Button();
-            this.trtmnts = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.add_grp = new System.Windows.Forms.Panel();
@@ -111,11 +109,13 @@
             this.label19 = new System.Windows.Forms.Label();
             this.trt_add = new System.Windows.Forms.Button();
             this.trmnt_cmb = new System.Windows.Forms.ComboBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.trt_cncl = new System.Windows.Forms.Button();
+            this.trt_sve = new System.Windows.Forms.Button();
+            this.trtmnts = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ViewBox1)).BeginInit();
             this.details.SuspendLayout();
-            this.ptn_pnl.SuspendLayout();
             this.adschp.SuspendLayout();
+            this.ptn_pnl.SuspendLayout();
             this.dctr_pnl.SuspendLayout();
             this.trmnt_pnl.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -181,8 +181,9 @@
             // 
             // details
             // 
+            this.details.Controls.Add(this.add_dtr);
+            this.details.Controls.Add(this.add_ptn);
             this.details.Controls.Add(this.adschp);
-            this.details.Controls.Add(this.add_dctr);
             this.details.Controls.Add(this.dctr_nm);
             this.details.Controls.Add(this.dctr);
             this.details.Controls.Add(this.trt_btn);
@@ -190,7 +191,6 @@
             this.details.Controls.Add(this.CancelS);
             this.details.Controls.Add(this.EditS);
             this.details.Controls.Add(this.AddS);
-            this.details.Controls.Add(this.add_ptn);
             this.details.Controls.Add(this.es);
             this.details.Controls.Add(this.em);
             this.details.Controls.Add(this.label7);
@@ -213,6 +213,93 @@
             this.details.TabStop = false;
             this.details.Text = "Appointent Details";
             this.details.Enter += new System.EventHandler(this.details_Enter);
+            // 
+            // add_dtr
+            // 
+            this.add_dtr.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_dtr.Location = new System.Drawing.Point(303, 215);
+            this.add_dtr.Name = "add_dtr";
+            this.add_dtr.Size = new System.Drawing.Size(45, 20);
+            this.add_dtr.TabIndex = 62;
+            this.add_dtr.Text = "...";
+            this.add_dtr.UseVisualStyleBackColor = true;
+            this.add_dtr.Click += new System.EventHandler(this.add_dtr_Click);
+            // 
+            // add_ptn
+            // 
+            this.add_ptn.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_ptn.Location = new System.Drawing.Point(303, 46);
+            this.add_ptn.Name = "add_ptn";
+            this.add_ptn.Size = new System.Drawing.Size(45, 20);
+            this.add_ptn.TabIndex = 61;
+            this.add_ptn.Text = "...";
+            this.add_ptn.UseVisualStyleBackColor = true;
+            this.add_ptn.Click += new System.EventHandler(this.add_ptn_Click);
+            // 
+            // adschp
+            // 
+            this.adschp.Controls.Add(this.rsts);
+            this.adschp.Controls.Add(this.addsch);
+            this.adschp.Location = new System.Drawing.Point(0, 250);
+            this.adschp.Name = "adschp";
+            this.adschp.Size = new System.Drawing.Size(354, 100);
+            this.adschp.TabIndex = 58;
+            this.adschp.Visible = false;
+            // 
+            // rsts
+            // 
+            this.rsts.BackColor = System.Drawing.Color.LemonChiffon;
+            this.rsts.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.rsts.Font = new System.Drawing.Font("Lucida Console", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rsts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rsts.Location = new System.Drawing.Point(203, 33);
+            this.rsts.Name = "rsts";
+            this.rsts.Size = new System.Drawing.Size(112, 33);
+            this.rsts.TabIndex = 27;
+            this.rsts.Text = "Reset";
+            this.rsts.UseVisualStyleBackColor = false;
+            // 
+            // addsch
+            // 
+            this.addsch.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.addsch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.addsch.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addsch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addsch.Location = new System.Drawing.Point(18, 33);
+            this.addsch.Name = "addsch";
+            this.addsch.Size = new System.Drawing.Size(122, 33);
+            this.addsch.TabIndex = 26;
+            this.addsch.Text = "Add Schedule";
+            this.addsch.UseVisualStyleBackColor = false;
+            // 
+            // dctr_nm
+            // 
+            this.dctr_nm.Location = new System.Drawing.Point(154, 215);
+            this.dctr_nm.Name = "dctr_nm";
+            this.dctr_nm.Size = new System.Drawing.Size(142, 20);
+            this.dctr_nm.TabIndex = 60;
+            // 
+            // dctr
+            // 
+            this.dctr.AutoSize = true;
+            this.dctr.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dctr.Location = new System.Drawing.Point(25, 220);
+            this.dctr.Name = "dctr";
+            this.dctr.Size = new System.Drawing.Size(54, 11);
+            this.dctr.TabIndex = 59;
+            this.dctr.Text = "Doctor:";
+            // 
+            // trt_btn
+            // 
+            this.trt_btn.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.trt_btn.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.trt_btn.Location = new System.Drawing.Point(154, 174);
+            this.trt_btn.Name = "trt_btn";
+            this.trt_btn.Size = new System.Drawing.Size(142, 23);
+            this.trt_btn.TabIndex = 58;
+            this.trt_btn.Text = "Select Treatment";
+            this.trt_btn.UseVisualStyleBackColor = true;
+            this.trt_btn.Click += new System.EventHandler(this.trt_btn_Click);
             // 
             // rst
             // 
@@ -262,17 +349,6 @@
             this.AddS.TabIndex = 17;
             this.AddS.Text = "Add Schedule";
             this.AddS.UseVisualStyleBackColor = false;
-            // 
-            // add_ptn
-            // 
-            this.add_ptn.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.add_ptn.Location = new System.Drawing.Point(302, 46);
-            this.add_ptn.Name = "add_ptn";
-            this.add_ptn.Size = new System.Drawing.Size(41, 20);
-            this.add_ptn.TabIndex = 16;
-            this.add_ptn.Text = "...";
-            this.add_ptn.UseVisualStyleBackColor = true;
-            this.add_ptn.Click += new System.EventHandler(this.Add_Click);
             // 
             // es
             // 
@@ -428,10 +504,9 @@
             // 
             // ptn_pnl
             // 
-            this.ptn_pnl.Controls.Add(this.dctr_pnl);
-            this.ptn_pnl.Controls.Add(this.button3);
-            this.ptn_pnl.Controls.Add(this.button2);
-            this.ptn_pnl.Controls.Add(this.button1);
+            this.ptn_pnl.Controls.Add(this.ptn_ccl);
+            this.ptn_pnl.Controls.Add(this.ptn_rst);
+            this.ptn_pnl.Controls.Add(this.pnl_sv);
             this.ptn_pnl.Controls.Add(this.textBox6);
             this.ptn_pnl.Controls.Add(this.label12);
             this.ptn_pnl.Controls.Add(this.textBox5);
@@ -452,43 +527,226 @@
             this.ptn_pnl.TabIndex = 56;
             this.ptn_pnl.Visible = false;
             // 
-            // button3
+            // dctr_pnl
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.Control;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(336, 295);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(87, 20);
-            this.button3.TabIndex = 58;
-            this.button3.Text = "Cancel";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.dctr_pnl.Controls.Add(this.dct_cn);
+            this.dctr_pnl.Controls.Add(this.label13);
+            this.dctr_pnl.Controls.Add(this.dct_gnd);
+            this.dctr_pnl.Controls.Add(this.label14);
+            this.dctr_pnl.Controls.Add(this.dct_age);
+            this.dctr_pnl.Controls.Add(this.label15);
+            this.dctr_pnl.Controls.Add(this.label16);
+            this.dctr_pnl.Controls.Add(this.dct_bdy);
+            this.dctr_pnl.Controls.Add(this.label17);
+            this.dctr_pnl.Controls.Add(this.dct_add);
+            this.dctr_pnl.Controls.Add(this.dct_lst);
+            this.dctr_pnl.Controls.Add(this.dct_frst);
+            this.dctr_pnl.Controls.Add(this.label18);
+            this.dctr_pnl.Controls.Add(this.dct_ccl);
+            this.dctr_pnl.Controls.Add(this.dct_rst);
+            this.dctr_pnl.Controls.Add(this.dct_sve);
+            this.dctr_pnl.Controls.Add(this.doctor);
+            this.dctr_pnl.Location = new System.Drawing.Point(385, 164);
+            this.dctr_pnl.Name = "dctr_pnl";
+            this.dctr_pnl.Size = new System.Drawing.Size(477, 368);
+            this.dctr_pnl.TabIndex = 59;
+            this.dctr_pnl.Visible = false;
             // 
-            // button2
+            // dct_cn
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(212, 295);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 20);
-            this.button2.TabIndex = 58;
-            this.button2.Text = "Reset";
-            this.button2.UseVisualStyleBackColor = false;
+            this.dct_cn.Location = new System.Drawing.Point(217, 234);
+            this.dct_cn.Name = "dct_cn";
+            this.dct_cn.Size = new System.Drawing.Size(202, 20);
+            this.dct_cn.TabIndex = 87;
             // 
-            // button1
+            // label13
             // 
-            this.button1.BackColor = System.Drawing.Color.SpringGreen;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(82, 295);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 20);
-            this.button1.TabIndex = 58;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = false;
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(57, 238);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(168, 16);
+            this.label13.TabIndex = 86;
+            this.label13.Text = "Contact Number: ";
+            // 
+            // dct_gnd
+            // 
+            this.dct_gnd.Location = new System.Drawing.Point(296, 198);
+            this.dct_gnd.Name = "dct_gnd";
+            this.dct_gnd.Size = new System.Drawing.Size(123, 20);
+            this.dct_gnd.TabIndex = 85;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(214, 202);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(78, 16);
+            this.label14.TabIndex = 84;
+            this.label14.Text = "Gender:";
+            // 
+            // dct_age
+            // 
+            this.dct_age.Location = new System.Drawing.Point(114, 198);
+            this.dct_age.Name = "dct_age";
+            this.dct_age.Size = new System.Drawing.Size(94, 20);
+            this.dct_age.TabIndex = 83;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(57, 202);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(48, 16);
+            this.label15.TabIndex = 82;
+            this.label15.Text = "Age:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(57, 163);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(88, 16);
+            this.label16.TabIndex = 81;
+            this.label16.Text = "Address:";
+            // 
+            // dct_bdy
+            // 
+            this.dct_bdy.Location = new System.Drawing.Point(171, 122);
+            this.dct_bdy.Name = "dct_bdy";
+            this.dct_bdy.Size = new System.Drawing.Size(248, 20);
+            this.dct_bdy.TabIndex = 80;
+            this.dct_bdy.Value = new System.DateTime(2018, 2, 10, 17, 31, 59, 0);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(57, 126);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(108, 16);
+            this.label17.TabIndex = 79;
+            this.label17.Text = "Birthdate:";
+            // 
+            // dct_add
+            // 
+            this.dct_add.Location = new System.Drawing.Point(171, 159);
+            this.dct_add.Name = "dct_add";
+            this.dct_add.Size = new System.Drawing.Size(248, 20);
+            this.dct_add.TabIndex = 78;
+            // 
+            // dct_lst
+            // 
+            this.dct_lst.Location = new System.Drawing.Point(298, 82);
+            this.dct_lst.Name = "dct_lst";
+            this.dct_lst.Size = new System.Drawing.Size(121, 20);
+            this.dct_lst.TabIndex = 77;
+            // 
+            // dct_frst
+            // 
+            this.dct_frst.Location = new System.Drawing.Point(171, 82);
+            this.dct_frst.Name = "dct_frst";
+            this.dct_frst.Size = new System.Drawing.Size(121, 20);
+            this.dct_frst.TabIndex = 76;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(57, 86);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(58, 16);
+            this.label18.TabIndex = 75;
+            this.label18.Text = "Name:";
+            // 
+            // dct_ccl
+            // 
+            this.dct_ccl.BackColor = System.Drawing.SystemColors.Control;
+            this.dct_ccl.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.dct_ccl.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dct_ccl.Location = new System.Drawing.Point(332, 287);
+            this.dct_ccl.Name = "dct_ccl";
+            this.dct_ccl.Size = new System.Drawing.Size(87, 20);
+            this.dct_ccl.TabIndex = 72;
+            this.dct_ccl.Text = "Cancel";
+            this.dct_ccl.UseVisualStyleBackColor = false;
+            this.dct_ccl.Click += new System.EventHandler(this.dct_ccl_Click);
+            // 
+            // dct_rst
+            // 
+            this.dct_rst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.dct_rst.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.dct_rst.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dct_rst.Location = new System.Drawing.Point(208, 287);
+            this.dct_rst.Name = "dct_rst";
+            this.dct_rst.Size = new System.Drawing.Size(87, 20);
+            this.dct_rst.TabIndex = 73;
+            this.dct_rst.Text = "Reset";
+            this.dct_rst.UseVisualStyleBackColor = false;
+            // 
+            // dct_sve
+            // 
+            this.dct_sve.BackColor = System.Drawing.Color.SpringGreen;
+            this.dct_sve.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.dct_sve.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dct_sve.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.dct_sve.Location = new System.Drawing.Point(78, 287);
+            this.dct_sve.Name = "dct_sve";
+            this.dct_sve.Size = new System.Drawing.Size(87, 20);
+            this.dct_sve.TabIndex = 74;
+            this.dct_sve.Text = "Save";
+            this.dct_sve.UseVisualStyleBackColor = false;
+            // 
+            // doctor
+            // 
+            this.doctor.AutoSize = true;
+            this.doctor.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.doctor.Location = new System.Drawing.Point(191, 33);
+            this.doctor.Name = "doctor";
+            this.doctor.Size = new System.Drawing.Size(108, 16);
+            this.doctor.TabIndex = 1;
+            this.doctor.Text = "Add Doctor";
+            // 
+            // ptn_ccl
+            // 
+            this.ptn_ccl.BackColor = System.Drawing.SystemColors.Control;
+            this.ptn_ccl.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ptn_ccl.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ptn_ccl.Location = new System.Drawing.Point(336, 295);
+            this.ptn_ccl.Name = "ptn_ccl";
+            this.ptn_ccl.Size = new System.Drawing.Size(87, 20);
+            this.ptn_ccl.TabIndex = 58;
+            this.ptn_ccl.Text = "Cancel";
+            this.ptn_ccl.UseVisualStyleBackColor = false;
+            this.ptn_ccl.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // ptn_rst
+            // 
+            this.ptn_rst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.ptn_rst.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ptn_rst.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ptn_rst.Location = new System.Drawing.Point(212, 295);
+            this.ptn_rst.Name = "ptn_rst";
+            this.ptn_rst.Size = new System.Drawing.Size(87, 20);
+            this.ptn_rst.TabIndex = 58;
+            this.ptn_rst.Text = "Reset";
+            this.ptn_rst.UseVisualStyleBackColor = false;
+            // 
+            // pnl_sv
+            // 
+            this.pnl_sv.BackColor = System.Drawing.Color.SpringGreen;
+            this.pnl_sv.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.pnl_sv.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnl_sv.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.pnl_sv.Location = new System.Drawing.Point(82, 295);
+            this.pnl_sv.Name = "pnl_sv";
+            this.pnl_sv.Size = new System.Drawing.Size(87, 20);
+            this.pnl_sv.TabIndex = 58;
+            this.pnl_sv.Text = "Save";
+            this.pnl_sv.UseVisualStyleBackColor = false;
             // 
             // textBox6
             // 
@@ -610,262 +868,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Add Patient";
             // 
-            // adschp
-            // 
-            this.adschp.Controls.Add(this.rsts);
-            this.adschp.Controls.Add(this.addsch);
-            this.adschp.Location = new System.Drawing.Point(0, 250);
-            this.adschp.Name = "adschp";
-            this.adschp.Size = new System.Drawing.Size(354, 100);
-            this.adschp.TabIndex = 58;
-            this.adschp.Visible = false;
-            // 
-            // rsts
-            // 
-            this.rsts.BackColor = System.Drawing.Color.LemonChiffon;
-            this.rsts.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.rsts.Font = new System.Drawing.Font("Lucida Console", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rsts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rsts.Location = new System.Drawing.Point(203, 33);
-            this.rsts.Name = "rsts";
-            this.rsts.Size = new System.Drawing.Size(112, 33);
-            this.rsts.TabIndex = 27;
-            this.rsts.Text = "Reset";
-            this.rsts.UseVisualStyleBackColor = false;
-            // 
-            // addsch
-            // 
-            this.addsch.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.addsch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.addsch.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addsch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.addsch.Location = new System.Drawing.Point(18, 33);
-            this.addsch.Name = "addsch";
-            this.addsch.Size = new System.Drawing.Size(122, 33);
-            this.addsch.TabIndex = 26;
-            this.addsch.Text = "Add Schedule";
-            this.addsch.UseVisualStyleBackColor = false;
-            // 
-            // trt_btn
-            // 
-            this.trt_btn.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.trt_btn.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.trt_btn.Location = new System.Drawing.Point(154, 174);
-            this.trt_btn.Name = "trt_btn";
-            this.trt_btn.Size = new System.Drawing.Size(142, 23);
-            this.trt_btn.TabIndex = 58;
-            this.trt_btn.Text = "Select Treatment";
-            this.trt_btn.UseVisualStyleBackColor = true;
-            // 
-            // dctr_nm
-            // 
-            this.dctr_nm.Location = new System.Drawing.Point(154, 215);
-            this.dctr_nm.Name = "dctr_nm";
-            this.dctr_nm.Size = new System.Drawing.Size(142, 20);
-            this.dctr_nm.TabIndex = 60;
-            // 
-            // dctr
-            // 
-            this.dctr.AutoSize = true;
-            this.dctr.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dctr.Location = new System.Drawing.Point(25, 220);
-            this.dctr.Name = "dctr";
-            this.dctr.Size = new System.Drawing.Size(54, 11);
-            this.dctr.TabIndex = 59;
-            this.dctr.Text = "Doctor:";
-            // 
-            // add_dctr
-            // 
-            this.add_dctr.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.add_dctr.Location = new System.Drawing.Point(302, 215);
-            this.add_dctr.Name = "add_dctr";
-            this.add_dctr.Size = new System.Drawing.Size(41, 20);
-            this.add_dctr.TabIndex = 61;
-            this.add_dctr.Text = "...";
-            this.add_dctr.UseVisualStyleBackColor = true;
-            // 
-            // doctor
-            // 
-            this.doctor.AutoSize = true;
-            this.doctor.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.doctor.Location = new System.Drawing.Point(191, 33);
-            this.doctor.Name = "doctor";
-            this.doctor.Size = new System.Drawing.Size(108, 16);
-            this.doctor.TabIndex = 1;
-            this.doctor.Text = "Add Doctor";
-            // 
-            // dct_sve
-            // 
-            this.dct_sve.BackColor = System.Drawing.Color.SpringGreen;
-            this.dct_sve.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.dct_sve.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dct_sve.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.dct_sve.Location = new System.Drawing.Point(78, 287);
-            this.dct_sve.Name = "dct_sve";
-            this.dct_sve.Size = new System.Drawing.Size(87, 20);
-            this.dct_sve.TabIndex = 74;
-            this.dct_sve.Text = "Save";
-            this.dct_sve.UseVisualStyleBackColor = false;
-            // 
-            // dct_rst
-            // 
-            this.dct_rst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.dct_rst.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.dct_rst.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dct_rst.Location = new System.Drawing.Point(208, 287);
-            this.dct_rst.Name = "dct_rst";
-            this.dct_rst.Size = new System.Drawing.Size(87, 20);
-            this.dct_rst.TabIndex = 73;
-            this.dct_rst.Text = "Reset";
-            this.dct_rst.UseVisualStyleBackColor = false;
-            // 
-            // dct_ccl
-            // 
-            this.dct_ccl.BackColor = System.Drawing.SystemColors.Control;
-            this.dct_ccl.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.dct_ccl.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dct_ccl.Location = new System.Drawing.Point(332, 287);
-            this.dct_ccl.Name = "dct_ccl";
-            this.dct_ccl.Size = new System.Drawing.Size(87, 20);
-            this.dct_ccl.TabIndex = 72;
-            this.dct_ccl.Text = "Cancel";
-            this.dct_ccl.UseVisualStyleBackColor = false;
-            // 
-            // dctr_pnl
-            // 
-            this.dctr_pnl.Controls.Add(this.trmnt_pnl);
-            this.dctr_pnl.Controls.Add(this.dct_cn);
-            this.dctr_pnl.Controls.Add(this.label13);
-            this.dctr_pnl.Controls.Add(this.dct_gnd);
-            this.dctr_pnl.Controls.Add(this.label14);
-            this.dctr_pnl.Controls.Add(this.dct_age);
-            this.dctr_pnl.Controls.Add(this.label15);
-            this.dctr_pnl.Controls.Add(this.label16);
-            this.dctr_pnl.Controls.Add(this.dct_bdy);
-            this.dctr_pnl.Controls.Add(this.label17);
-            this.dctr_pnl.Controls.Add(this.dct_add);
-            this.dctr_pnl.Controls.Add(this.dct_lst);
-            this.dctr_pnl.Controls.Add(this.dct_frst);
-            this.dctr_pnl.Controls.Add(this.label18);
-            this.dctr_pnl.Controls.Add(this.dct_ccl);
-            this.dctr_pnl.Controls.Add(this.dct_rst);
-            this.dctr_pnl.Controls.Add(this.dct_sve);
-            this.dctr_pnl.Controls.Add(this.doctor);
-            this.dctr_pnl.Location = new System.Drawing.Point(0, 0);
-            this.dctr_pnl.Name = "dctr_pnl";
-            this.dctr_pnl.Size = new System.Drawing.Size(477, 350);
-            this.dctr_pnl.TabIndex = 59;
-            // 
-            // dct_cn
-            // 
-            this.dct_cn.Location = new System.Drawing.Point(217, 234);
-            this.dct_cn.Name = "dct_cn";
-            this.dct_cn.Size = new System.Drawing.Size(202, 20);
-            this.dct_cn.TabIndex = 87;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(57, 238);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(168, 16);
-            this.label13.TabIndex = 86;
-            this.label13.Text = "Contact Number: ";
-            // 
-            // dct_gnd
-            // 
-            this.dct_gnd.Location = new System.Drawing.Point(296, 198);
-            this.dct_gnd.Name = "dct_gnd";
-            this.dct_gnd.Size = new System.Drawing.Size(123, 20);
-            this.dct_gnd.TabIndex = 85;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(214, 202);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(78, 16);
-            this.label14.TabIndex = 84;
-            this.label14.Text = "Gender:";
-            // 
-            // dct_age
-            // 
-            this.dct_age.Location = new System.Drawing.Point(114, 198);
-            this.dct_age.Name = "dct_age";
-            this.dct_age.Size = new System.Drawing.Size(94, 20);
-            this.dct_age.TabIndex = 83;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(57, 202);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(48, 16);
-            this.label15.TabIndex = 82;
-            this.label15.Text = "Age:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(57, 163);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(88, 16);
-            this.label16.TabIndex = 81;
-            this.label16.Text = "Address:";
-            // 
-            // dct_bdy
-            // 
-            this.dct_bdy.Location = new System.Drawing.Point(171, 122);
-            this.dct_bdy.Name = "dct_bdy";
-            this.dct_bdy.Size = new System.Drawing.Size(248, 20);
-            this.dct_bdy.TabIndex = 80;
-            this.dct_bdy.Value = new System.DateTime(2018, 2, 10, 17, 31, 59, 0);
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(57, 126);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(108, 16);
-            this.label17.TabIndex = 79;
-            this.label17.Text = "Birthdate:";
-            // 
-            // dct_add
-            // 
-            this.dct_add.Location = new System.Drawing.Point(171, 159);
-            this.dct_add.Name = "dct_add";
-            this.dct_add.Size = new System.Drawing.Size(248, 20);
-            this.dct_add.TabIndex = 78;
-            // 
-            // dct_lst
-            // 
-            this.dct_lst.Location = new System.Drawing.Point(298, 82);
-            this.dct_lst.Name = "dct_lst";
-            this.dct_lst.Size = new System.Drawing.Size(121, 20);
-            this.dct_lst.TabIndex = 77;
-            // 
-            // dct_frst
-            // 
-            this.dct_frst.Location = new System.Drawing.Point(171, 82);
-            this.dct_frst.Name = "dct_frst";
-            this.dct_frst.Size = new System.Drawing.Size(121, 20);
-            this.dct_frst.TabIndex = 76;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(57, 86);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(58, 16);
-            this.label18.TabIndex = 75;
-            this.label18.Text = "Name:";
-            // 
             // trmnt_pnl
             // 
             this.trmnt_pnl.Controls.Add(this.textBox7);
@@ -876,53 +878,26 @@
             this.trmnt_pnl.Controls.Add(this.trt_cncl);
             this.trmnt_pnl.Controls.Add(this.trt_sve);
             this.trmnt_pnl.Controls.Add(this.trtmnts);
-            this.trmnt_pnl.Location = new System.Drawing.Point(0, 0);
+            this.trmnt_pnl.Location = new System.Drawing.Point(385, 164);
             this.trmnt_pnl.Name = "trmnt_pnl";
-            this.trmnt_pnl.Size = new System.Drawing.Size(477, 350);
+            this.trmnt_pnl.Size = new System.Drawing.Size(477, 368);
             this.trmnt_pnl.TabIndex = 57;
+            this.trmnt_pnl.Visible = false;
             // 
-            // trt_cncl
+            // textBox7
             // 
-            this.trt_cncl.BackColor = System.Drawing.SystemColors.Control;
-            this.trt_cncl.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.trt_cncl.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.trt_cncl.Location = new System.Drawing.Point(332, 292);
-            this.trt_cncl.Name = "trt_cncl";
-            this.trt_cncl.Size = new System.Drawing.Size(87, 20);
-            this.trt_cncl.TabIndex = 89;
-            this.trt_cncl.Text = "Cancel";
-            this.trt_cncl.UseVisualStyleBackColor = false;
-            // 
-            // trt_sve
-            // 
-            this.trt_sve.BackColor = System.Drawing.Color.SpringGreen;
-            this.trt_sve.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.trt_sve.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.trt_sve.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.trt_sve.Location = new System.Drawing.Point(78, 292);
-            this.trt_sve.Name = "trt_sve";
-            this.trt_sve.Size = new System.Drawing.Size(87, 20);
-            this.trt_sve.TabIndex = 91;
-            this.trt_sve.Text = "Save";
-            this.trt_sve.UseVisualStyleBackColor = false;
-            // 
-            // trtmnts
-            // 
-            this.trtmnts.AutoSize = true;
-            this.trtmnts.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.trtmnts.Location = new System.Drawing.Point(191, 38);
-            this.trtmnts.Name = "trtmnts";
-            this.trtmnts.Size = new System.Drawing.Size(108, 16);
-            this.trtmnts.TabIndex = 88;
-            this.trtmnts.Text = "Treatments";
+            this.textBox7.Location = new System.Drawing.Point(17, 28);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.TabIndex = 96;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dataGridView3);
-            this.groupBox2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(255, 93);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(184, 165);
+            this.groupBox2.Size = new System.Drawing.Size(206, 165);
             this.groupBox2.TabIndex = 95;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Selected Treatments";
@@ -932,10 +907,10 @@
             this.dataGridView3.AllowUserToAddRows = false;
             this.dataGridView3.AllowUserToDeleteRows = false;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(17, 21);
+            this.dataGridView3.Location = new System.Drawing.Point(6, 21);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.ReadOnly = true;
-            this.dataGridView3.Size = new System.Drawing.Size(151, 137);
+            this.dataGridView3.Size = new System.Drawing.Size(194, 137);
             this.dataGridView3.TabIndex = 27;
             // 
             // add_grp
@@ -957,10 +932,10 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Calibri Light", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Lucida Console", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(3, 4);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(95, 18);
+            this.label19.Size = new System.Drawing.Size(110, 12);
             this.label19.TabIndex = 0;
             this.label19.Text = "Please specify:";
             // 
@@ -968,10 +943,10 @@
             // 
             this.trt_add.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.trt_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.trt_add.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.trt_add.Font = new System.Drawing.Font("Lucida Console", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.trt_add.Location = new System.Drawing.Point(184, 95);
             this.trt_add.Name = "trt_add";
-            this.trt_add.Size = new System.Drawing.Size(40, 27);
+            this.trt_add.Size = new System.Drawing.Size(40, 21);
             this.trt_add.TabIndex = 93;
             this.trt_add.Text = "Add";
             this.trt_add.UseVisualStyleBackColor = false;
@@ -1002,18 +977,49 @@
             this.trmnt_cmb.Size = new System.Drawing.Size(140, 21);
             this.trmnt_cmb.TabIndex = 92;
             // 
-            // textBox7
+            // trt_cncl
             // 
-            this.textBox7.Location = new System.Drawing.Point(17, 28);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 96;
+            this.trt_cncl.BackColor = System.Drawing.SystemColors.Control;
+            this.trt_cncl.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.trt_cncl.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.trt_cncl.Location = new System.Drawing.Point(332, 292);
+            this.trt_cncl.Name = "trt_cncl";
+            this.trt_cncl.Size = new System.Drawing.Size(87, 20);
+            this.trt_cncl.TabIndex = 89;
+            this.trt_cncl.Text = "Cancel";
+            this.trt_cncl.UseVisualStyleBackColor = false;
+            this.trt_cncl.Click += new System.EventHandler(this.trt_cncl_Click);
+            // 
+            // trt_sve
+            // 
+            this.trt_sve.BackColor = System.Drawing.Color.SpringGreen;
+            this.trt_sve.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.trt_sve.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.trt_sve.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.trt_sve.Location = new System.Drawing.Point(78, 292);
+            this.trt_sve.Name = "trt_sve";
+            this.trt_sve.Size = new System.Drawing.Size(87, 20);
+            this.trt_sve.TabIndex = 91;
+            this.trt_sve.Text = "Save";
+            this.trt_sve.UseVisualStyleBackColor = false;
+            // 
+            // trtmnts
+            // 
+            this.trtmnts.AutoSize = true;
+            this.trtmnts.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.trtmnts.Location = new System.Drawing.Point(191, 38);
+            this.trtmnts.Name = "trtmnts";
+            this.trtmnts.Size = new System.Drawing.Size(108, 16);
+            this.trtmnts.TabIndex = 88;
+            this.trtmnts.Text = "Treatments";
             // 
             // USC_appointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
+            this.Controls.Add(this.trmnt_pnl);
+            this.Controls.Add(this.dctr_pnl);
             this.Controls.Add(this.ptn_pnl);
             this.Controls.Add(this.datetime);
             this.Controls.Add(this.label8);
@@ -1030,9 +1036,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.ViewBox1)).EndInit();
             this.details.ResumeLayout(false);
             this.details.PerformLayout();
+            this.adschp.ResumeLayout(false);
             this.ptn_pnl.ResumeLayout(false);
             this.ptn_pnl.PerformLayout();
-            this.adschp.ResumeLayout(false);
             this.dctr_pnl.ResumeLayout(false);
             this.dctr_pnl.PerformLayout();
             this.trmnt_pnl.ResumeLayout(false);
@@ -1055,7 +1061,6 @@
         private System.Windows.Forms.DataGridView ViewBox1;
         private System.Windows.Forms.GroupBox details;
         private System.Windows.Forms.Label patient;
-        private System.Windows.Forms.Button add_ptn;
         private System.Windows.Forms.ComboBox es;
         private System.Windows.Forms.ComboBox em;
         private System.Windows.Forms.Label label7;
@@ -1089,16 +1094,15 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button pnl_sv;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button ptn_ccl;
+        private System.Windows.Forms.Button ptn_rst;
         private System.Windows.Forms.Button trt_btn;
         private System.Windows.Forms.Panel adschp;
         private System.Windows.Forms.Button rsts;
         private System.Windows.Forms.Button addsch;
-        private System.Windows.Forms.Button add_dctr;
         private System.Windows.Forms.TextBox dctr_nm;
         private System.Windows.Forms.Label dctr;
         private System.Windows.Forms.Panel dctr_pnl;
@@ -1131,5 +1135,7 @@
         private System.Windows.Forms.Button trt_cncl;
         private System.Windows.Forms.Button trt_sve;
         private System.Windows.Forms.Label trtmnts;
+        private System.Windows.Forms.Button add_dtr;
+        private System.Windows.Forms.Button add_ptn;
     }
 }
