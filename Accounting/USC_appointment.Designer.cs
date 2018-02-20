@@ -43,7 +43,6 @@
             this.dctr_nm = new System.Windows.Forms.TextBox();
             this.dctr = new System.Windows.Forms.Label();
             this.trt_btn = new System.Windows.Forms.Button();
-            this.rst = new System.Windows.Forms.Button();
             this.CancelS = new System.Windows.Forms.Button();
             this.EditS = new System.Windows.Forms.Button();
             this.AddS = new System.Windows.Forms.Button();
@@ -65,6 +64,23 @@
             this.label8 = new System.Windows.Forms.Label();
             this.datetime = new System.Windows.Forms.Label();
             this.ptn_pnl = new System.Windows.Forms.Panel();
+            this.ptn_ccl = new System.Windows.Forms.Button();
+            this.ptn_rst = new System.Windows.Forms.Button();
+            this.pnl_sv = new System.Windows.Forms.Button();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.dctr_pnl = new System.Windows.Forms.Panel();
             this.dct_cn = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -83,23 +99,6 @@
             this.dct_rst = new System.Windows.Forms.Button();
             this.dct_sve = new System.Windows.Forms.Button();
             this.doctor = new System.Windows.Forms.Label();
-            this.ptn_ccl = new System.Windows.Forms.Button();
-            this.ptn_rst = new System.Windows.Forms.Button();
-            this.pnl_sv = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.trmnt_pnl = new System.Windows.Forms.Panel();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -187,7 +186,6 @@
             this.details.Controls.Add(this.dctr_nm);
             this.details.Controls.Add(this.dctr);
             this.details.Controls.Add(this.trt_btn);
-            this.details.Controls.Add(this.rst);
             this.details.Controls.Add(this.CancelS);
             this.details.Controls.Add(this.EditS);
             this.details.Controls.Add(this.AddS);
@@ -240,9 +238,9 @@
             // 
             this.adschp.Controls.Add(this.rsts);
             this.adschp.Controls.Add(this.addsch);
-            this.adschp.Location = new System.Drawing.Point(0, 250);
+            this.adschp.Location = new System.Drawing.Point(0, 255);
             this.adschp.Name = "adschp";
-            this.adschp.Size = new System.Drawing.Size(354, 100);
+            this.adschp.Size = new System.Drawing.Size(354, 95);
             this.adschp.TabIndex = 58;
             this.adschp.Visible = false;
             // 
@@ -258,6 +256,7 @@
             this.rsts.TabIndex = 27;
             this.rsts.Text = "Reset";
             this.rsts.UseVisualStyleBackColor = false;
+            this.rsts.Click += new System.EventHandler(this.rsts_Click);
             // 
             // addsch
             // 
@@ -301,24 +300,12 @@
             this.trt_btn.UseVisualStyleBackColor = true;
             this.trt_btn.Click += new System.EventHandler(this.trt_btn_Click);
             // 
-            // rst
-            // 
-            this.rst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.rst.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.rst.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rst.Location = new System.Drawing.Point(183, 300);
-            this.rst.Name = "rst";
-            this.rst.Size = new System.Drawing.Size(142, 20);
-            this.rst.TabIndex = 57;
-            this.rst.Text = "Reset";
-            this.rst.UseVisualStyleBackColor = false;
-            // 
             // CancelS
             // 
             this.CancelS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.CancelS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CancelS.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CancelS.Location = new System.Drawing.Point(183, 274);
+            this.CancelS.Location = new System.Drawing.Point(196, 320);
             this.CancelS.Name = "CancelS";
             this.CancelS.Size = new System.Drawing.Size(142, 20);
             this.CancelS.TabIndex = 56;
@@ -330,7 +317,7 @@
             this.EditS.BackColor = System.Drawing.Color.Cyan;
             this.EditS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.EditS.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditS.Location = new System.Drawing.Point(30, 300);
+            this.EditS.Location = new System.Drawing.Point(196, 295);
             this.EditS.Name = "EditS";
             this.EditS.Size = new System.Drawing.Size(142, 20);
             this.EditS.TabIndex = 18;
@@ -343,12 +330,13 @@
             this.AddS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.AddS.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddS.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.AddS.Location = new System.Drawing.Point(30, 274);
+            this.AddS.Location = new System.Drawing.Point(196, 269);
             this.AddS.Name = "AddS";
             this.AddS.Size = new System.Drawing.Size(142, 20);
             this.AddS.TabIndex = 17;
             this.AddS.Text = "Add Schedule";
             this.AddS.UseVisualStyleBackColor = false;
+            this.AddS.Click += new System.EventHandler(this.AddS_Click);
             // 
             // es
             // 
@@ -526,6 +514,164 @@
             this.ptn_pnl.Size = new System.Drawing.Size(477, 350);
             this.ptn_pnl.TabIndex = 56;
             this.ptn_pnl.Visible = false;
+            // 
+            // ptn_ccl
+            // 
+            this.ptn_ccl.BackColor = System.Drawing.SystemColors.Control;
+            this.ptn_ccl.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ptn_ccl.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ptn_ccl.Location = new System.Drawing.Point(336, 295);
+            this.ptn_ccl.Name = "ptn_ccl";
+            this.ptn_ccl.Size = new System.Drawing.Size(87, 20);
+            this.ptn_ccl.TabIndex = 58;
+            this.ptn_ccl.Text = "Cancel";
+            this.ptn_ccl.UseVisualStyleBackColor = false;
+            this.ptn_ccl.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // ptn_rst
+            // 
+            this.ptn_rst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.ptn_rst.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ptn_rst.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ptn_rst.Location = new System.Drawing.Point(212, 295);
+            this.ptn_rst.Name = "ptn_rst";
+            this.ptn_rst.Size = new System.Drawing.Size(87, 20);
+            this.ptn_rst.TabIndex = 58;
+            this.ptn_rst.Text = "Reset";
+            this.ptn_rst.UseVisualStyleBackColor = false;
+            // 
+            // pnl_sv
+            // 
+            this.pnl_sv.BackColor = System.Drawing.Color.SpringGreen;
+            this.pnl_sv.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.pnl_sv.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnl_sv.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.pnl_sv.Location = new System.Drawing.Point(82, 295);
+            this.pnl_sv.Name = "pnl_sv";
+            this.pnl_sv.Size = new System.Drawing.Size(87, 20);
+            this.pnl_sv.TabIndex = 58;
+            this.pnl_sv.Text = "Save";
+            this.pnl_sv.UseVisualStyleBackColor = false;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(221, 238);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(202, 20);
+            this.textBox6.TabIndex = 14;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(61, 242);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(168, 16);
+            this.label12.TabIndex = 13;
+            this.label12.Text = "Contact Number: ";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(300, 202);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(123, 20);
+            this.textBox5.TabIndex = 12;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(218, 206);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(78, 16);
+            this.label11.TabIndex = 11;
+            this.label11.Text = "Gender:";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(118, 202);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(94, 20);
+            this.textBox4.TabIndex = 10;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(61, 206);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(48, 16);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "Age:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(61, 167);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(88, 16);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "Address:";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(175, 126);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(248, 20);
+            this.dateTimePicker1.TabIndex = 7;
+            this.dateTimePicker1.Value = new System.DateTime(2018, 2, 10, 17, 31, 59, 0);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(61, 130);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(108, 16);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Birthdate:";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(175, 163);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(248, 20);
+            this.textBox3.TabIndex = 4;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(302, 86);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(121, 20);
+            this.textBox2.TabIndex = 3;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(175, 86);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(121, 20);
+            this.textBox1.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(61, 90);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 16);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Name:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(191, 35);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(118, 16);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Add Patient";
             // 
             // dctr_pnl
             // 
@@ -709,164 +855,6 @@
             this.doctor.Size = new System.Drawing.Size(108, 16);
             this.doctor.TabIndex = 1;
             this.doctor.Text = "Add Doctor";
-            // 
-            // ptn_ccl
-            // 
-            this.ptn_ccl.BackColor = System.Drawing.SystemColors.Control;
-            this.ptn_ccl.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.ptn_ccl.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ptn_ccl.Location = new System.Drawing.Point(336, 295);
-            this.ptn_ccl.Name = "ptn_ccl";
-            this.ptn_ccl.Size = new System.Drawing.Size(87, 20);
-            this.ptn_ccl.TabIndex = 58;
-            this.ptn_ccl.Text = "Cancel";
-            this.ptn_ccl.UseVisualStyleBackColor = false;
-            this.ptn_ccl.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // ptn_rst
-            // 
-            this.ptn_rst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.ptn_rst.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.ptn_rst.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ptn_rst.Location = new System.Drawing.Point(212, 295);
-            this.ptn_rst.Name = "ptn_rst";
-            this.ptn_rst.Size = new System.Drawing.Size(87, 20);
-            this.ptn_rst.TabIndex = 58;
-            this.ptn_rst.Text = "Reset";
-            this.ptn_rst.UseVisualStyleBackColor = false;
-            // 
-            // pnl_sv
-            // 
-            this.pnl_sv.BackColor = System.Drawing.Color.SpringGreen;
-            this.pnl_sv.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.pnl_sv.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnl_sv.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnl_sv.Location = new System.Drawing.Point(82, 295);
-            this.pnl_sv.Name = "pnl_sv";
-            this.pnl_sv.Size = new System.Drawing.Size(87, 20);
-            this.pnl_sv.TabIndex = 58;
-            this.pnl_sv.Text = "Save";
-            this.pnl_sv.UseVisualStyleBackColor = false;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(221, 238);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(202, 20);
-            this.textBox6.TabIndex = 14;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(61, 242);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(168, 16);
-            this.label12.TabIndex = 13;
-            this.label12.Text = "Contact Number: ";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(300, 202);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(123, 20);
-            this.textBox5.TabIndex = 12;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(218, 206);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(78, 16);
-            this.label11.TabIndex = 11;
-            this.label11.Text = "Gender:";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(118, 202);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(94, 20);
-            this.textBox4.TabIndex = 10;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(61, 206);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(48, 16);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Age:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(61, 167);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(88, 16);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Address:";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(175, 126);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(248, 20);
-            this.dateTimePicker1.TabIndex = 7;
-            this.dateTimePicker1.Value = new System.DateTime(2018, 2, 10, 17, 31, 59, 0);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(61, 130);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 16);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Birthdate:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(175, 163);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(248, 20);
-            this.textBox3.TabIndex = 4;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(302, 86);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 20);
-            this.textBox2.TabIndex = 3;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(175, 86);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
-            this.textBox1.TabIndex = 2;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(61, 90);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 16);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Name:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(191, 35);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 16);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Add Patient";
             // 
             // trmnt_pnl
             // 
@@ -1077,7 +1065,6 @@
         private System.Windows.Forms.Label appdate;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label datetime;
-        private System.Windows.Forms.Button rst;
         private System.Windows.Forms.Button CancelS;
         private System.Windows.Forms.Button EditS;
         private System.Windows.Forms.Button AddS;

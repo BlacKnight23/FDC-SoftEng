@@ -31,7 +31,7 @@ namespace Accounting
         public USC_patient_info()
         {
             InitializeComponent();
-            conn = new MySqlConnection("Server=localhost;Database=fdc;Uid=root; ");
+            conn = new MySqlConnection("Server=localhost;Database=fdc;Uid=root;password=root ");
         }
 
         private void USC_patient_info_Load(object sender, EventArgs e)

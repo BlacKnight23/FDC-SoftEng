@@ -44,6 +44,15 @@ namespace Accounting
 
         private void Reset()
         {
+            patn.Text = "";
+            dtpkr.Text = "";
+            shr.Text = "";
+            sm.Text = "";
+            ss.Text = "";
+            ehr.Text = "";
+            em.Text = "";
+            es.Text = "";
+            dctr_nm.Text = "";
         }
 
     
@@ -89,6 +98,17 @@ namespace Accounting
         private void add_dtr_Click(object sender, EventArgs e)
         {
             dctr_pnl.Show();
+        }
+
+        private void AddS_Click(object sender, EventArgs e)
+        {
+            adschp.Show();
+        }
+
+        private void rsts_Click(object sender, EventArgs e)
+        {
+            adschp.Hide();
+            Reset();
         }
     }
 }

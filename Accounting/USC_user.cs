@@ -30,7 +30,7 @@ namespace Accounting
         public USC_user()
         {
             InitializeComponent();
-            conn = new MySqlConnection("Server=localhost;Database=fdc;Uid=root; ");
+            conn = new MySqlConnection("Server=localhost;Database=fdc;Uid=root;password=root ");
         }
 
         private void USC_user_Load(object sender, EventArgs e)

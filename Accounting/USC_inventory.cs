@@ -18,7 +18,7 @@ namespace Accounting
         public USC_inventory()
         {
             InitializeComponent();
-            conn = new MySqlConnection("Server=localhost;Database=fdc;Uid=root; ");
+            conn = new MySqlConnection("Server=localhost;Database=fdc;Uid=root;password=root ");
         }
         public static USC_inventory Instance
         {
